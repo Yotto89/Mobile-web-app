@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="apple-mobile-web-app-title" content="NYSL app">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="css/images/applogo.png">
+	<link rel="apple-touch-startup-image" href="">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+
+
+<body>
+	<div id="app">
+		<div v-show="links.index">
+			<header>
+				<div class="title1">Northside Youth Soccer League</div>
+				<div>
+					<img class="logo" src="css/images/logo2.png" alt="NYSLlogo">
+				</div>
+			</header>
+			<div class="index1">
+				<div class="container">
+					<div class="buttonmenu">
+
+						<a v-on:click="hideandshow('leaderboard'); stats();" class="button1 btn btn-secondary btn-lg" role="button">
+							<p class="buttontext">Leaderboard</p>
+						</a>
+						<a v-on:click="hideandshow('matches')" class="button1 btn btn-secondary btn-lg" role="button">
+							<p class="buttontext">Schedule</p>
+						</a>
+						<a v-on:click="hideandshow('standings')" class="button1 btn btn-secondary btn-lg" role="button">
+							<p class="buttontext">Standings</p>
+						</a>
+						<a v-on:click="hideandshow('fields')" class="button1 btn btn-secondary btn-lg" role="button">
+							<p class="buttontext">Fields</p>
+						</a>
+						<a v-on:click="hideandshow('chat')" class="button1 btn btn-secondary btn-lg" role="button">
+							<p class="buttontext">Chat</p>
+						</a>
+						<a v-on:click="hideandshow('contact')" class="button1 btn btn-secondary btn-lg" role="button">
+							<p class="buttontext">About</p>
+						</a>
+
+					</div>
+				</div>
+
+
+				<div class="burgerbuttonbot">
+					<nav class="navbar navbar-fixed-bottom navbar-light navbar-expand-sm navbar-template">
+						<a class="navbar-brand" href="#">NYSL</a>
+						<div class="d-flex flex-row order-2 order-sm-3">
+							<ul class="navbar-nav flex-row">
+								<li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/nikefootball/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+								<li class="nav-item"><a class="nav-link px-2" href="https://www.twitter.com/nikefootball/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+								<li class="nav-item"><a class="nav-link px-2" href="https://www.youtube.com/user/NikeFootball" target="_blank"><i class="fab fa-youtube"></i></a></li>
+								<li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/nikefootball?utm_source=ig_profile_share&igshid=17mx6qoktmebn"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+
+						</div>
+					</nav>
+
+
+				</div>
+			</div>
+		</div>
+		<div v-show="links.navbar" class="burgerbuttontop">
+			<nav class="navbar navbar-fixed-top navbar-light navbar-expand-sm navbar-template">
+				<a class="navbar-brand" href="#">NYSL</a>
+				<div class="socialmediaicon">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/nikefootball/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.twitter.com/nikefootball/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.youtube.com/user/NikeFootball" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/nikefootball?utm_source=ig_profile_share&igshid=17mx6qoktmebn"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				</div>
+				<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fa fa-bars fa-1x"></i></span></button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav ml-auto">
+						<li v-on:click="hideandshow('index')" class="nav-item active"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">Home</a></li>
+						<li v-on:click="hideandshow('leaderboard')" class="nav-item"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">Leaderboard</a></li>
+						<li v-on:click="hideandshow('matches')" class="nav-item"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">Schedule</a></li>
+						<li v-on:click="hideandshow('standings')" class="nav-item"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">Standings</a></li>
+						<li v-on:click="hideandshow('fields')" class="nav-item"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">Fields</a></li>
+						<li v-on:click="hideandshow('chat')" class="nav-item"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">Chat</a></li>
+						<li v-on:click="hideandshow('contact')" class="nav-item"><a data-toggle="collapse" data-target="#navbarSupportedContent1" class="nav-link">About</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div v-show="links.leaderboard">
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th scope="col">Team</th>
+						<th scope="col">Won</th>
+						<th scope="col">Goals</th>
+						<th scope="col">R/Y Cards</th>
+						<th scope="col">Faults</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="value in info">
+						<td>{{value.id}}</td>
+						<td>{{value.matcheswon}}</td>
+						<td>{{value.totalgoals}}</td>
+						<td>{{value.redcards}} R / {{value.yellowcards}} Y</td>
+						<td>{{value.faults}}</td>
+					</tr>
+
+
+				</tbody>
+			</table>
+
+
+
+		</div>
+		<div v-show="links.matches">
+
+			<div class="titlematches">Next Matches</div>
+			<div class="accordion">
+				<div class="matchmenu">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									<div class="matchtext1">
+										<p>Vasil Gamblers vs Rawl Inmortals</p>
+										<p>3rd December</p>
+									</div>
+								</button>
+							</h5>
+						</div>
+
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<div class="team1">
+									<a class="btn-floating btn-lg" v-on:click="hideandshow('standings')"><img class="logoteam" src="css/images/gamblers.png" alt=""></a>
+									<p>Lluis</p>
+									<p>Gerard</p>
+									<p>Vasil</p>
+									<p>Rawl</p>
+									<p>Alex</p>
+									
+									
+								</div>
+								<div class="team1">
+									<a class="btn-floating btn-lg" v-on:click="hideandshow('standings')"><img class="logoteam" src="css/images/inmortals.png" alt=""></a>
+								<p>Yaroslav</p>
+								<p>Wendy</p>
+								<p>Sinisha</p>
+								<p>Lin</p>
+								<p>Ling</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<div class="matchtext1">
+										<p>Sallent Lions vs Ubiqum Geeks </p>
+
+										<p>4th January</p>
+									</div>
+
+								</button>
+							</h5>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<div class="team1">
+									<a class="btn-floating btn-lg" v-on:click="hideandshow('standings')"><img class="logoteam" src="css/images/lions.png" alt=""></a>
+									<p>Goal Keeper:-</p>
+									<p> Defense: -</p>
+									<p>Midfield: -</p>
+									<p>Midfield: - </p>
+									<p>Kicker: -</p>
+								</div>
+								<div class="team1">
+									<a class="btn-floating btn-lg" v-on:click="hideandshow('standings')"><img class="logoteam" src="css/images/geeks.png" alt=""></a>
+									<p>Goal Keeper: - </p>
+									<p> Defense: -</p>
+									<p>Midfield: -</p>
+									<p>Midfield: - </p>
+									<p>Kicker: -</p>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									<div class="matchtext1">
+										<p>Raging Cruaders vs Red Devils</p>
+
+										<p>5th February</p>
+
+									</div>
+								</button>
+							</h5>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<div class="team1">
+									<a class="btn-floating btn-lg" v-on:click="hideandshow('standings')"><img class="logoteam" src="css/images/crusaders.png" alt=""></a>
+									<p>GK: - </p>
+									<p>Def: -</p>
+									<p>Def: -</p>
+									<p>Mfield: - </p>
+									<p>Kick: -</p>
+								</div>
+								<div class="team1">
+									<a class="btn-floating btn-lg" v-on:click="hideandshow('standings')"><img class="logoteam" src="css/images/devils.png" alt=""></a>
+									<p>Goal Keeper: - </p>
+									<p> Defense: -</p>
+									<p>Midfield: -</p>
+									<p>Midfield: - </p>
+									<p>Kicker: -</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div v-show="links.standings">
+
+			<div class="titlematches">Standings</div>
+			<div class="standingmenu">
+				<div class="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h5 class="mb-0">
+								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+									<div class="matchtext">
+										<p>Vasil Gamblers</p>
+									</div>
+								</button>
+							</h5>
+						</div>
+
+						<div id="collapseSix" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th scope="col">Player</th>
+											<th scope="col">Goals</th>
+											<th scope="col">R/Y Cards</th>
+											<th scope="col">Faults</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr v-for="value in info[2].players">
+											<th scope="row"> {{value.name}}</th>
+											<td>{{value.goals}}</td>
+											<td>{{value.redcard}} R / {{value.yellowcard}} Y</td>
+											<td>{{value.faults}}</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									<div class="matchtext">
+										<p>Sallent Lions</p>
+									</div>
+
+								</button>
+							</h5>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th scope="col">Player</th>
+											<th scope="col">Goals</th>
+											<th scope="col">R/Y Cards</th>
+											<th scope="col">Faults</th>
+										</tr>
+									</thead>
+									<tbody>
+									<tr v-for="value in info[3].players">
+											<th scope="row"> {{value.name}}</th>
+											<td>{{value.goals}}</td>
+											<td>{{value.redcard}} R / {{value.yellowcard}} Y</td>
+											<td>{{value.faults}}</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									<div class="matchtext">
+										<p> Rawl Inmortals</p>
+									</div>
+								</button>
+							</h5>
+						</div>
+						<div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th scope="col">Player</th>
+											<th scope="col">Goals</th>
+											<th scope="col">R/Y Cards</th>
+											<th scope="col">Faults</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr v-for="value in info[1].players">
+											<th scope="row"> {{value.name}}</th>
+											<td>{{value.goals}}</td>
+											<td>{{value.redcard}} R / {{value.yellowcard}} Y</td>
+											<td>{{value.faults}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div v-show="links.fields">
+
+			<div class="card-f" style="width: 18rem;">
+				<img class="card-img-top" src="css/images/bnwsf.png" alt="Soccer Field">
+				<div class="card-body-f">
+					<h5 class="card-title">Gambler's Arena</h5>
+					<p class="card-text">Be careful, some crazy guy named Vasil Markov offers candies to kids at the exit of the stadium, he's also known as "The Gambler".</p>
+					<h5>Adress</h5>
+					<p class="card-text"> Sofia, Bulgaria - Bulgarian st 666</p>
+					<a id="card-link" href="https://goo.gl/maps/bbVFswNQbX82" class="btn btn-primary">See in map</a>
+				</div>
+			</div>
+			<div class="card-f" style="width: 18rem;">
+				<img class="card-img-top" src="css/images/inmortalsfld.png" alt="Soccer Field">
+				<div class="card-body-f">
+					<h5 class="card-title">Inmortals Stadium</h5>
+					<p class="card-text">Top Security on this Stadium, your bags will be checked, although they'll be some random inspections on kids and parents. Ask for Rawl Martinez if you feel uncomfortable.</p>
+					<h5>Adress</h5>
+					<p class="card-text"> Blanes, Catalonia - Carrer dels Mentors 22</p>
+					<a id="card-link" href="https://goo.gl/maps/u83E2yezx3m" class="btn btn-primary">See in map</a>
+				</div>
+			</div>
+			<div class="card-f" style="width: 18rem;">
+				<img class="card-img-top" src="css/images/sallentfield.png" alt="Soccer Field">
+				<div class="card-body-f">
+					<h5 class="card-title">Sallent SF</h5>
+					<p class="card-text"> ATTENTION: Temperature never reaches 10ªC, be aware of cold weather, the white walker also known as Lluis Garcia may appear to terrorize children while playing!</p>
+					<h5>Adress</h5>
+					<p class="card-text"> Sallent, Catalonia - Northern st 46</p>
+					<a id="card-link" href="https://goo.gl/maps/TWejReVAaDv" class="btn btn-primary">See in map</a>
+				</div>
+			</div>
+		</div>
+		<div v-show="links.chat">
+			<div class="chat">
+				<div class="chatwindow">
+					<h2 class="chattitle">Team Chat</h2>
+					<div class="buttonschat">
+
+						<div class="ventana" v-show="logouta" id="posts"></div>
+
+						<div class="buttonschat">
+							<input v-show="logouta" id="textInput" class="input" type="text" placeholder="Type in here!">
+							<div class="send">
+							<button v-show="logouta" class="sendm btn btn-lg btn-succes" id="create-post" class="button is-primary" v-on:click="writeNewPost">Send</button>
+							</div>
+							</div>
+							<button class="login btn btn-lg btn-succes" id="login" v-on:click="login" v-show="logina">Login</button>
+							<button class=" login btn btn-lg btn-succes" id="logout" v-on:click="logout" v-show="logouta">Logout</button>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div v-show="links.contact">
+
+			<div>
+				<h3>Mission</h3>
+				<p class="indent">To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
+
+				<h3>Vision</h3>
+				<p class="indent">The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+
+				<h3>General Information</h3>
+				<p class="indent">The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of NYSL, you must be between the ages of 4 - 12 and reside in a Chicago northside neighborhood. NYSL is run by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyDqnQxAh2l7N5aTY8Juk1wSKhFunsAqshE",
+			authDomain: "mi-fabulosisima-app.firebaseapp.com",
+			databaseURL: "https://mi-fabulosisima-app.firebaseio.com",
+			projectId: "mi-fabulosisima-app",
+			storageBucket: "mi-fabulosisima-app.appspot.com",
+			messagingSenderId: "484220869649"
+		};
+		firebase.initializeApp(config);
+
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>

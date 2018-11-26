@@ -1,0 +1,289 @@
+{
+	"teams": [
+		{
+			"id": "Ubiqum Geeks",
+			"matcheswon": "6",
+			"players": [
+				{
+					"name": "Joan",
+					"position": "goalkeeper",
+					"goals": 0,
+					"redcard": 0,
+					"yellowcard": 2,
+					"faults": 1
+				},
+				{
+					"name": "Ruben",
+					"position": "defense",
+					"goals": 2,
+					"redcard": 2,
+					"yellowcard": 4,
+					"faults": 1
+				},
+				{
+					"name": "Santi",
+					"position": "defense",
+					"goals": 3,
+					"redcard": 1,
+					"yellowcard": 5,
+					"faults": 1
+				},
+				{
+					"name": "Dani",
+					"position": "midfield",
+					"goals": 4,
+					"redcard": 0,
+					"yellowcard": 0,
+					"faults": 0
+				},
+				{
+					"name": "Emi",
+					"position": "kicker",
+					"goals": 23,
+					"redcard": 2,
+					"yellowcard": 3,
+					"faults": 5
+				}
+
+			]
+	},
+		{
+			"id": "Rawl inmortals",
+			"matcheswon": "0",
+			"players": [
+				{
+					"name": "Yaroslav",
+					"position": "goalkeeper",
+					"goals": 0,
+					"redcard": 2,
+					"yellowcard": 5,
+					"faults": 7
+				},
+				{
+					"name": "Wendy",
+					"position": "defense",
+					"goals": 5,
+					"redcard": 6,
+					"yellowcard": 1,
+					"faults": 2
+				},
+				{
+					"name": "Sinisha",
+					"position": "defense",
+					"goals": 3,
+					"redcard": 0,
+					"yellowcard": 1,
+					"faults": 1
+				},
+				{
+					"name": "Lin",
+					"position": "midfield",
+					"goals": 4,
+					"redcard": 7,
+					"yellowcard": 6,
+					"faults": 1
+				},
+				{
+					"name": "Ling",
+					"position": "kicker",
+					"goals": 7,
+					"redcard": 2,
+					"yellowcard": 3,
+					"faults": 4
+				}
+		]
+},
+		{
+			"id": "Vasil Gamblers",
+			"matcheswon": "3",
+			"players": [
+				{
+					"name": "Lluis",
+					"position": "goalkeeper",
+					"goals": 0,
+					"redcard": 2,
+					"yellowcard": 5,
+					"faults": 7
+				},
+				{
+					"name": "Gerard",
+					"position": "defense",
+					"goals": 5,
+					"redcard": 6,
+					"yellowcard": 1,
+					"faults": 2
+				},
+				{
+					"name": "Vasil",
+					"position": "defense",
+					"goals": 3,
+					"redcard": 0,
+					"yellowcard": 1,
+					"faults": 1
+				},
+				{
+					"name": "Rawl",
+					"position": "midfield",
+					"goals": 4,
+					"redcard": 7,
+					"yellowcard": 6,
+					"faults": 1
+				},
+				{
+					"name": "Alex",
+					"position": "kicker",
+					"goals": 9,
+					"redcard": 2,
+					"yellowcard": 3,
+					"faults": 4
+				}
+
+			]
+}, 
+		{
+			"id": "Sallent Lions",
+			"matcheswon": "7",
+			"players": [
+				{
+					"name": "Peter",
+					"position": "goalkeeper",
+					"goals": 2,
+					"redcard": 2,
+					"yellowcard": 5,
+					"faults": 7
+				},
+				{
+					"name": "Lois",
+					"position": "defense",
+					"goals": 5,
+					"redcard": 6,
+					"yellowcard": 1,
+					"faults": 2
+				},
+				{
+					"name": "Meg",
+					"position": "defense",
+					"goals": 3,
+					"redcard": 0,
+					"yellowcard": 1,
+					"faults": 1
+				},
+				{
+					"name": "Chris",
+					"position": "midfield",
+					"goals": 4,
+					"redcard": 7,
+					"yellowcard": 6,
+					"faults": 1
+				},
+				{
+					"name": "Stewie",
+					"position": "kicker",
+					"goals": 1,
+					"redcard": 2,
+					"yellowcard": 3,
+					"faults": 4
+				}
+				]
+
+},
+		{
+			"id": "Raging Crusaders",
+			"matcheswon": "10",
+			"players": [
+				{
+					"name": "Leonardo",
+					"position": "goalkeeper",
+					"goals": 0,
+					"redcard": 2,
+					"yellowcard": 5,
+					"faults": 7
+				},
+				{
+					"name": "Raphael",
+					"position": "defense",
+					"goals": 5,
+					"redcard": 6,
+					"yellowcard": 1,
+					"faults": 2
+
+				},
+				{
+					"name": "Donatello",
+					"position": "defense",
+					"goals": 3,
+					"redcard": 0,
+					"yellowcard": 1,
+					"faults": 1
+				},
+				{
+					"name": "Michelangello",
+					"position": "midfield",
+					"goals": 4,
+					"redcard": 7,
+					"yellowcard": 6,
+					"faults": 1
+				},
+				{
+					"name": "Splinter",
+					"position": "kicker",
+					"goals": 13,
+					"redcard": 2,
+					"yellowcard": 3,
+					"faults": 4
+				}
+							 ]
+}, 
+		{
+			"id": "Red Devils",
+			"matcheswon": "3",
+			"players": [
+				{
+					"name": "Homer",
+					"position": "goalkeeper",
+					"goals": 0,
+					"redcard": 2,
+					"yellowcard": 5,
+					"faults": 7
+				},
+				{
+					"name": "Bort",
+					"position": "defense",
+					"goals": 15,
+					"redcard": 6,
+					"yellowcard": 1,
+					"faults": 2
+
+				},
+				{
+					"name": "Lisa",
+					"position": "defense",
+					"goals": 3,
+					"redcard": 0,
+					"yellowcard": 1,
+					"faults": 1
+
+				},
+				{
+					"name": "Marge",
+					"position": "midfield",
+					"goals": 4,
+					"redcard": 7,
+					"yellowcard": 6,
+					"faults": 1
+				},
+				{
+					"name": "Maggie",
+					"position": "kicker",
+					"goals": 3,
+					"redcard": 2,
+					"yellowcard": 3,
+					"faults": 4
+				}
+				]
+
+
+
+}
+	]
+}

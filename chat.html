@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="NYSL app">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="css/images/applogo.png">
+	<link rel="apple-touch-startup-image" href="">
+	<title>Chat</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+</head>
+
+
+<body>
+
+
+	<div class="burgerbuttontop">
+		<nav class="navbar navbar-fixed-bottom navbar-light navbar-expand-sm navbar-template">
+			<a class="navbar-brand" href="#">NYSL</a>
+			<div class="d-flex flex-row order-2 order-sm-3">
+				<ul class="navbar-nav flex-row">
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/nikefootball/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.twitter.com/nikefootball/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.youtube.com/user/NikeFootball" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					<li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/nikefootball?utm_source=ig_profile_share&igshid=17mx6qoktmebn"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fa fa-bars fa-1x"></i></span></button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+					<li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li>
+					<li class="nav-item"><a class="nav-link" href="standings.html">Standings</a></li>
+					<li class="nav-item"><a class="nav-link" href="fields.html">Fields</a></li>
+					<li class="nav-item"><a class="nav-link" href="chat.html">Chat</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">About</a></li>
+				</ul>
+			</div>
+
+		</nav>
+	</div>
+	<div class="container">
+		<form class="form-horizontal" role="form" method="POST" action="/register">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="register1">Register New User</div>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 field-label-responsive">
+					<label id="name">Name</label>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+							<input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required autofocus>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 field-label-responsive">
+					<label id="email">E-Mail Address</label>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+							<input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 field-label-responsive">
+					<label id="password">Password</label>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group has-danger">
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+							<input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-3 field-label-responsive">
+					<label id="password">Confirm Password</label>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon" style="width: 2.6rem">
+								<i class="fa fa-repeat"></i>
+							</div>
+							<input type="password" name="password-confirmation" class="form-control" id="password-confirm" placeholder="Password" required>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="regbtn">
+				<div cclass="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "NYSL_Mobile_Responsive_App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.4.0"
+  }
+}

@@ -1,0 +1,255 @@
+{
+	"league": "NYSL",
+
+	"teams": [
+		{
+			"id": "teamA",
+			"matcheswon": "6",
+			"players": [{
+				"Joan": {
+					"position": "goalkeeper",
+					"goals": "0",
+					"redcard": "0",
+					"yellowcard": "2",
+					"faults": "1"
+				},
+				"Ruben": {
+					"position": "defense",
+					"goals": "2",
+					"redcard": "2",
+					"yellowcard": "4",
+					"faults": "15"
+				},
+				"Santi": {
+					"position": "defense",
+					"goals": "3",
+					"redcard": "1",
+					"yellowcard": "5",
+					"faults": "14"
+				},
+				"Dani": {
+					"position": "midfield",
+					"goals": "4",
+					"redcard": "0",
+					"yellowcard": "0",
+					"faults": "0"
+				},
+				"Emi": {
+					"position": "kicker",
+					"goals": "23",
+					"redcard": "2",
+					"yellowcard": "3",
+					"faults": "5"
+				}
+
+				 }]
+		}, {
+			"id": "teamB",
+			"matcheswon": "0",
+			"players": [{
+				"Yaroslav": {
+					"position": "goalkeeper",
+					"goals": "0",
+					"redcard": "2",
+					"yellowcard": "5",
+					"faults": "7"
+				},
+				"Wendy": {
+					"position": "defense",
+					"goals": "5",
+					"redcard": "6",
+					"yellowcard": "14",
+					"faults": "20"
+				},
+				"Sinisha": {
+					"position": "defense",
+					"goals": "3",
+					"redcard": "0",
+					"yellowcard": "15",
+					"faults": "15"
+				},
+				"Lin": {
+					"position": "midfield",
+					"goals": "4",
+					"redcard": "7",
+					"yellowcard": "6",
+					"faults": "13"
+				},
+				"Ling": {
+					"position": "kicker",
+					"goals": "3",
+					"redcard": "2",
+					"yellowcard": "3",
+					"faults": "4"
+				}
+							 }]
+		}, {
+			"id": "teamC",
+			"matcheswon": "3",
+			"players": [{
+				"Lluis": {
+					"position": "goalkeeper",
+					"goals": "0",
+					"redcard": "2",
+					"yellowcard": "5",
+					"faults": "7"
+				},
+				"Gerard": {
+					"position": "defense",
+					"goals": "5",
+					"redcard": "6",
+					"yellowcard": "14",
+					"faults": "20"
+				},
+				"Vasil": {
+					"position": "defense",
+					"goals": "3",
+					"redcard": "0",
+					"yellowcard": "15",
+					"faults": "15"
+				},
+				"Rawl": {
+					"position": "midfield",
+					"goals": "4",
+					"redcard": "7",
+					"yellowcard": "6",
+					"faults": "13"
+				},
+				"Alex": {
+					"position": "kicker",
+					"goals": "3",
+					"redcard": "2",
+					"yellowcard": "3",
+					"faults": "4"
+				}
+			}]
+							 }, {
+			"id": "teamD",
+			"matcheswon": "7",
+			"players": [{
+				"Peter": {
+					"position": "goalkeeper",
+					"goals": "0",
+					"redcard": "2",
+					"yellowcard": "5",
+					"faults": "7"
+				},
+				"Lois": {
+					"position": "defense",
+					"goals": "5",
+					"redcard": "6",
+					"yellowcard": "14",
+					"faults": "20"
+				},
+				"Meg": {
+					"position": "defense",
+					"goals": "3",
+					"redcard": "0",
+					"yellowcard": "15",
+					"faults": "15"
+				},
+				"Chris": {
+					"position": "midfield",
+					"goals": "4",
+					"redcard": "7",
+					"yellowcard": "6",
+					"faults": "13"
+				},
+				"Stewie": {
+					"position": "kicker",
+					"goals": "3",
+					"redcard": "2",
+					"yellowcard": "3",
+					"faults": "4"
+				}
+							 }]
+		}, {
+			"id": "teamE",
+			"matcheswon": "10",
+			"players": [{
+				"Leonardo": {
+					"position": "goalkeeper",
+					"goals": "0",
+					"redcard": "2",
+					"yellowcard": "5",
+					"faults": "7"
+				},
+				"Raphael": {
+					"position": "defense",
+					"goals": "5",
+					"redcard": "6",
+					"yellowcard": "14",
+					"faults": "20"
+
+				},
+				"Donatello": {
+					"position": "defense",
+					"goals": "3",
+					"redcard": "0",
+					"yellowcard": "15",
+					"faults": "15"
+				},
+				"Michelangelo": {
+					"position": "midfield",
+					"goals": "4",
+					"redcard": "7",
+					"yellowcard": "6",
+					"faults": "13"
+				},
+				"Splinter": {
+					"position": "kicker",
+					"goals": "3",
+					"redcard": "2",
+					"yellowcard": "3",
+					"faults": "4"
+				}
+							 }]
+		}, {
+			"id": "teamF",
+			"matcheswon": "3",
+			"players": [{
+				"Homer": {
+					"position": "goalkeeper",
+					"goals": "0",
+					"redcard": "2",
+					"yellowcard": "5",
+					"faults": "7"
+				},
+				"Bart": {
+					"position": "defense",
+					"goals": "5",
+					"redcard": "6",
+					"yellowcard": "14",
+					"faults": "20"
+
+				},
+				"Lisa": {
+					"position": "defense",
+					"goals": "3",
+					"redcard": "0",
+					"yellowcard": "15",
+					"faults": "15"
+
+				},
+				"Marge": {
+					"position": "midfield",
+					"goals": "4",
+					"redcard": "7",
+					"yellowcard": "6",
+					"faults": "13"
+				},
+				"Maggie": {
+					"position": "kicker",
+					"goals": "3",
+					"redcard": "2",
+					"yellowcard": "3",
+					"faults": "4"
+
+				}
+				}]
+
+
+
+	}
+	]
+}
